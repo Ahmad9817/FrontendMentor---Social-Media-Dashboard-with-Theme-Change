@@ -1,0 +1,366 @@
+hey {
+    color: #1DB489 #DC414C #00BFFF #1CA0F2 #FDC468 #DF4996 #C4032A;
+    color: #378FE6 #3EDA82;
+    background: #AEB3CB;
+    background: #1E202A #1F212E #252A41 #8B97C6 #FFFFFF;
+    color: #FFFFFF #F5F7FF #F0F2FA #63687E #1E202A;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    padding: 0 130px;
+    margin: 0;
+    /* background: linear-gradient(to bottom, #a2ea4c 200px, #07aa91 200px, #07aa91); */
+    background: linear-gradient(to bottom, #1F212E 280px, #1E202A 280px, #1E202A);
+    color: #F0F2FA;
+}
+
+p {
+    font-size: 18px;
+}
+
+header {
+    margin: 35px 0 0 0;
+    font-weight: bold;
+}
+
+.header-name {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.header-mode-toggle {
+    display: inline-block;
+    text-align: right;
+    width: calc(100% - 310px);
+    vertical-align: middle;
+    color: #63687E;
+}
+
+.header-mode-toggle p {
+    display: inline-block;
+    font-size: 16px;
+    vertical-align: middle;
+    margin-right: 15px;
+}
+
+.header-mode-toggle div {
+    display: inline-block;
+}
+
+h1 {
+    margin: 0;
+    font-size: 26px;
+    line-height: 1.5;
+}
+
+.header-name p {
+    margin: 0;
+    font-size: 16px;
+    color: #63687E;
+}
+
+hr {
+    display: none;
+}
+
+/* Toggle Botton */
+
+/* Box around botton */
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 45px;
+    height: 24px;
+    vertical-align: middle;
+}
+
+/* Hide default html checkbox */
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* Slider design */
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: linear-gradient(to right, #378FE6, #3EDA82);
+    border-radius: 25px;
+}
+
+.slider::before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    left: 2px;
+    bottom: 2px;
+    background-color: #1F212E;
+    border-radius: 50%;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background: #63687E;
+}
+
+input:checked + .slider::before {
+    transform: translateX(21px);
+    background-color: #F0F2FA;
+}
+
+
+
+
+/* Section 2 ID = Total followers */
+
+#total-followers {
+    margin: 15px 0 45px 0;
+    text-align: center;
+}
+
+.overall-overview {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 250px;
+    margin-top: 30px;
+    text-align: center;
+    border-radius: 4px;
+    padding-top: 4px;
+
+}
+
+.overview-margin {
+    margin-right: calc((100% - 1000px) / 3);
+}
+
+.inner-div {
+    background-color: #252A41;
+    padding: 15px 0;
+
+}
+
+.facebook {
+    background-color: #1CA0F2;
+}
+
+.twitter {
+    background-color: #00BFFF;
+}
+
+.youtube {
+    background-color: #C4032A;
+}
+
+.instagram {
+    background-image: linear-gradient(to right, #FDC468, #DF4996);
+}
+
+
+img + p {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 10px;
+    font-weight: bold;
+    font-size: 15px !important;
+    color: #63687E;
+    
+}
+
+img {
+    vertical-align: middle;
+    transform: scale(1.3);
+}
+
+img + p + p {
+    font-weight: bold;
+    font-size: 60px;
+    margin: 5px 0 0 0;
+}
+
+img + p + p + p {
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #63687E;
+}
+
+img + p.follower-increase {
+    color: #1DB489 !important; 
+}
+
+img + p.follower-decrease {
+    color: #DC414C;
+}
+/* 3rd section ID = daily overview */
+
+#daily-overview {
+    text-align: center;
+}
+
+.daily-overview-header p {
+    margin: 0;
+}
+
+.daily-overview-header p, .daily-overview-header {
+    font-size: 20px;
+    color: #63687E;
+    font-weight: bold;
+    text-align: left;
+}
+
+.daily-overview-columns {
+    box-sizing: border-box;
+    width: 250px;
+    margin-top: 25px;
+    display: inline-block;
+    padding: 20px;
+    background-color: #252A41;
+    border-radius: 4px;
+}
+
+.daily-overview-inner-column-top p {
+    display: inline-block;
+    width: calc(100% - 25px);
+    font-weight: bold;
+    color: #63687E;
+
+}
+
+.daily-overview-inner-column-bottom p {
+    display: inline-block;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.daily-overview-inner-column-bottom .daily-overview-paragraphs {
+    margin: 12px 0 0 0;
+    width: 53px;
+    text-align: left;
+}
+
+.daily-overview-inner-column-top .daily-overview-paragraphs {
+    margin: 0 0 12px 0;
+    text-align: left;
+}
+
+.daily-overview-inner-column-bottom span {
+    display: inline-block;
+    width: calc(100% - 59px);
+    text-align: right;
+}
+
+.attribution {
+    color: #F0F2FA;
+    font-size: 13px;
+    margin: 30px 0;
+    text-align: center;
+}
+
+.attribution a {
+    color: #63687E;
+}
+
+.attribution a:hover {
+    color: #F0F2FA;
+}
+
+@media (max-width: 1220px) {
+   
+    /* Section 2 ID = Total followers */
+ 
+     .overview-margin, #daily-overview .instagram-2 {
+         margin-right: calc((100% - 750px) / 2);
+     }
+ 
+     #total-followers div.instagram, #daily-overview .instagram-1, #daily-overview .twitter-2 {
+         margin-right: 0;
+     }
+ }
+ 
+@media (max-width: 1040px) {
+
+    .overview-margin, #total-followers div.instagram, #daily-overview .instagram-1 {
+        margin-right: calc(100% - 500px);
+    }
+    
+    #total-followers div.twitter, #daily-overview .facebook-2, #daily-overview .instagram-2 {
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 780px) {
+ 
+    body {
+        padding: 0 30px;
+    }
+
+}
+
+@media (max-width: 580px) {
+
+
+    .header-name {
+        display: block;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    .header-name p, .header-mode-toggle p {
+        font-size: 19px;
+    }
+
+    .header-name p {
+        margin-bottom: 25px;
+    }
+
+    .header-mode-toggle p {
+        margin: 0;
+    }
+
+    .header-mode-toggle {
+        display: block;
+        text-align: left;
+        width: 100%;
+        margin-top: 20px;
+    }
+    
+    .header-mode-toggle div {
+        width: calc(100% - 101px);
+        text-align: right;
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    hr {
+        display: block;
+        margin: 0;
+        border-style: solid;
+
+    }
+
+    .overview-margin, #total-followers div.instagram, #daily-overview .instagram-1 {
+        margin-right: 0;
+    }
+    
+    .overall-overview:not(:first-child) {
+        margin-top: 30px;
+    }
+
+    .overall-overview, .daily-overview-columns {
+        width: 100%;
+    }
+
+}
